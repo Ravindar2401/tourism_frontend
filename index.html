@@ -1,0 +1,600 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Toursism</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+</head>
+<body>
+  <div class="home" id="sectionHome">
+    <div>
+      <h1 class="main">Start Exploring to Find Inner Peace by Traveling</h1>
+      <p class="p">Lost Yourself with vocation and Travel into a place that you never visit before.We have a thousand places
+         in our database for you.
+      </p>
+      <div class="buttons">
+        <button class="btn1" onclick="display('sectionPlaces')" data-target="_blank">Explore</button>
+        <button class="btn2">Know more</button>
+      </div>
+    </div>
+  </div>
+  <div id="sectionPlaces">
+    <div class="bg_container">
+      <div class="nav_container">
+        <img class="nav_img" src="https://w1.pngwing.com/pngs/863/117/png-transparent-travel-art-carolinas-aviation-museum-travel-tours-travel-agent-yellow-line-circle-logo.png"/>
+        <div class="nav_items">
+          <select class="nav_list_item" style="border-radius: 10px;">
+            <option>Travel Styles</option>
+          </select>
+          <select class="nav_list_item" style="border-radius: 10px;"><option>Destinations</option></select>
+          <p class="nav_list_item" style="color: white;">Travel Deals</p>
+          <p class="nav_list_item" style="color: white;">Help</p>
+        </div>
+      </div>
+      <h1 class="explore">Explore</h1>
+      <div class="items_container">
+        <div class="list_item_container">
+          <img class="place_img" src="https://ik.imagekit.io/ddl22/assets/images/articles/general/taj_mahal-min.jpg"/>
+          <h1 class="card_heading">Taj Mahal,Agra</h1>
+          <p class="card_des">The Taj Mahal, located in Agra, India, is a stunning white marble mausoleum built by Mughal Emperor Shah Jahan in memory of his wife Mumtaz Mahal. Renowned for its intricate architecture and serene beauty, it is a UNESCO World Heritage Site and a symbol of love.</p>
+          <button class="b1" id="btn1" onclick="display('sectionTajMahalDetailedView')">View More
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-right" viewBox="0 0 16 16">
+              <path fill-rule="evenodd" d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8"/>
+            </svg>
+          </button>
+        </div>
+        <div class="list_item_container">
+          <img class="place_img" src="https://res.cloudinary.com/rainforest-cruises/images/c_fill,g_auto/f_auto,q_auto/w_1120,h_732,c_fill,g_auto/v1661186659/top-10-tourist-attractions-in-india-mysore-palace/top-10-tourist-attractions-in-india-mysore-palace-1120x732.jpg"/>
+          <h1 class="card_heading">Mysore palace</h1>
+          <p class="card_des">Mysore Palace, located in Karnataka, India, is a stunning royal residence showcasing Indo-Saracenic architecture with intricate carvings, domes, and vibrant interiors. It is a popular tourist attraction, illuminated beautifully at night with thousands of lights.</p>
+          <button class="b1" onclick="display('sectionMysorePalaceDetailedView')">View More
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-right" viewBox="0 0 16 16">
+              <path fill-rule="evenodd" d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8"/>
+            </svg>
+          </button>
+        </div>
+        <div class="list_item_container">
+          <img class="place_img" src="https://res.cloudinary.com/rainforest-cruises/images/c_fill,g_auto/f_auto,q_auto/w_1120,h_732,c_fill,g_auto/v1661186654/top-10-tourist-attractions-in-india-manikarnika-ghat/top-10-tourist-attractions-in-india-manikarnika-ghat-1120x732.jpg"/>
+          <h1 class="card_heading">Manikarnika Ghat,Varanasi</h1>
+          <p class="card_des">Manikarnika Ghat, located in Varanasi, is one of the city's holiest and oldest ghats, known for its significance in Hindu cremation rituals. Believed to offer liberation from the cycle of rebirth, it is a place deeply steeped in spirituality and tradition.</p>
+          <button class="b1" onclick="display('sectionVaranasi')">View More
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-right" viewBox="0 0 16 16">
+              <path fill-rule="evenodd" d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8"/>
+            </svg>
+          </button>
+        </div>
+        <div class="list_item_container">
+          <img class="place_img" src="https://www.jodogoairportassist.com/main/assets/images/blog/india/top-10-tourist-places-to-visit-in-india-2.webp"/>
+          <h1 class="card_heading">Goa</h1>
+          <p class="card_des">Goa, a vibrant coastal state in India, is renowned for its pristine beaches, Portuguese heritage, and lively nightlife. It offers a blend of natural beauty, historic churches, and a relaxed tropical vibe, making it a favorite tourist destination.</p>
+          <button class="b1" onclick="display('sectionGoa')">View More
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-right" viewBox="0 0 16 16">
+              <path fill-rule="evenodd" d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8"/>
+            </svg>
+          </button>
+        </div>
+        <div class="list_item_container">
+          <img class="place_img" src="https://www.jodogoairportassist.com/main/assets/images/blog/india/top-10-tourist-places-to-visit-in-india-5.webp"/>
+          <h1 class="card_heading">Munnar,Kerala</h1>
+          <p class="card_des">Munnar, located in Kerala's Western Ghats, is one of the most tranquil and picturesque tourist destinations in India. The hill station features exceptional natural beauty in the form of rolling hills, picturesque valleys, virgin forests, waterfalls, streams, national parks, tea and spice plantations, and meandering pathways.</p>
+          <button class="b1" onclick="display('sectionMunnar')">View More
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-right" viewBox="0 0 16 16">
+              <path fill-rule="evenodd" d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8"/>
+            </svg>
+          </button>
+        </div>
+        <div class="list_item_container">
+          <img class="place_img" src="https://a.storyblok.com/f/95452/3000x1687/4804cee083/india-manali-in-winter.png/m/1200x630/filters:focal(null)"/>
+          <h1 class="card_heading">Manali</h1>
+          <p class="card_des">Manali, located in the Kullu Valley of Himachal Pradesh, attracts visitors with its natural beauty and serenity.The hill station is popular by tourists from across the nation, particularly during the summer months when cities swelter in the searing heat.</p>
+          <button class="b1" onclick="display('sectionManali')">View More
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-right" viewBox="0 0 16 16">
+              <path fill-rule="evenodd" d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8"/>
+            </svg>
+          </button>
+        </div>
+        <div class="list_item_container">
+          <img class="place_img" src="https://d2rdhxfof4qmbb.cloudfront.net/wp-content/uploads/20200819131211/iStock-535570117-scaled.jpg"/>
+          <h1 class="card_heading">Amritsar</h1>
+          <p class="card_des">Amritsar, founded by Guru Ram Das in 1577, is regarded as the spiritual capital of Sikhism. The Golden Temple, the holiest gurudwara of the Sikh religion, is located in the heart of the old city. Locals refer to it as Harmandir Sahib Gurudwara.</p>
+          <button class="b1" onclick="display('sectionAmritsar')">View More
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-right" viewBox="0 0 16 16">
+              <path fill-rule="evenodd" d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8"/>
+            </svg>
+          </button>
+        </div>
+        <div class="list_item_container">
+          <img class="place_img" src="https://www.jodogoairportassist.com/main/assets/images/blog/india/top-10-tourist-places-to-visit-in-india-7.webp"/>
+          <h1 class="card_heading">Ooty,Tamil nadu</h1>
+          <p class="card_des">Udhagamandalam, usually referred to as Ooty, is a hill station in Tamil Nadu. The mild climate, the view of India's Western Ghats, and the tranquil environment make this a wonderful vacation spot for families and friends.</p>
+          <button class="b1" onclick="display('sectionOoty')">View More
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-right" viewBox="0 0 16 16">
+              <path fill-rule="evenodd" d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8"/>
+            </svg>
+          </button>
+        </div>
+      </div>
+      <button class="btn btn-warning" style="margin-left: 25px;margin-bottom: 15px" onclick="display('sectionHome')">
+        Back
+      </button>
+    </div>
+  </div>
+  
+    <div id="sectionTajMahalDetailedView">
+      <div class="detailed-view-bg-container">
+        <h1 class="detailed-view-heading">Detailed View</h1>
+        <div class="detailed-view-card-container">
+          <div id="carouselExampleIndicators1" class="carousel slide" data-ride="carousel">
+            <ol class="carousel-indicators">
+              <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+              <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+              <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+            </ol>
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img
+                  src="https://d1tgh8fmlzexmh.cloudfront.net/ccbp-static-website/tajmahal-c1-img.png"
+                  class="d-block w-100"
+                  alt="..."
+                />
+              </div>
+              <div class="carousel-item">
+                <img
+                  src="https://d1tgh8fmlzexmh.cloudfront.net/ccbp-static-website/tajmahal-c2-img.png"
+                  class="d-block w-100"
+                  alt="..."
+                />
+              </div>
+              <div class="carousel-item">
+                <img
+                  src="https://d1tgh8fmlzexmh.cloudfront.net/ccbp-static-website/tajmahal-c3-img.png"
+                  class="d-block w-100"
+                  alt="..."
+                />
+              </div>
+            </div>
+            <a class="carousel-control-prev" href="#carouselExampleIndicators1" role="button" data-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="sr-only">Previous</span>
+            </a>
+            <a class="carousel-control-next" href="#carouselExampleIndicators1" role="button" data-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="sr-only">Next</span>
+            </a>
+          </div>
+          <div class="detailed-view-card-text-container">
+            <h1 class="detailed-view-card-heading">Taj Mahal</h1>
+            <p class="detailed-view-card-description">
+              The Taj Mahal is considered to be the greatest architectural achievement
+              in the whole range of Indo-Islamic architecture. Its recognised
+              architectonic beauty has a rhythmic combination of solids and voids,
+              concave and convex and light shadow; such as arches and domes further
+              increases the aesthetic aspect. Not a piece of architecture, as other
+              buildings are, but the proud passions of an emperor’s love wrought in
+              living stones.
+            </p>
+          </div>
+        </div>
+        <button class="btn btn-warning" style="margin-left: 25px;margin-bottom: 15px;" onclick="display('sectionPlaces')">
+          back
+        </button>
+      </div>
+    </div>
+    <div id="sectionMysorePalaceDetailedView">
+      <div class="detailed-view-bg-container">
+        <h1 class="detailed-view-heading">Detailed View</h1>
+        <div class="detailed-view-card-container">
+          <div id="carouselExampleIndicators2" class="carousel slide" data-ride="carousel">
+            <ol class="carousel-indicators">
+              <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+              <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+              <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+            </ol>
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img
+                  src="https://media.gettyimages.com/id/172124032/photo/mysore-palace-at-dusk.jpg?s=612x612&w=0&k=20&c=paO74C_dVsY14IbK0RNqs0TD-lSteQy-AW5CnQFEb_4="
+                  class="d-block w-100"
+                  alt="..."
+                />
+              </div>
+              <div class="carousel-item">
+                <img
+                  src="https://cdn.britannica.com/27/242227-050-48358A10/Mysore-Palace-Mysuru-Karnataka-India.jpg"
+                  class="d-block w-100"
+                  alt="..."
+                />
+              </div>
+              <div class="carousel-item">
+                <img
+                  src="https://backpackersunited.in/_next/image?url=https%3A%2F%2Fbpu-images-v1.s3.eu-north-1.amazonaws.com%2Fuploads%2F1721723478772_photo-1657856855186-7cf4909a4f78.avif&w=3840&q=75"
+                  class="d-block w-100"
+                  alt="..."
+                />
+              </div>
+            </div>
+            <a class="carousel-control-prev" href="#carouselExampleIndicators1" role="button" data-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="sr-only">Previous</span>
+            </a>
+            <a class="carousel-control-next" href="#carouselExampleIndicators1" role="button" data-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="sr-only">Next</span>
+            </a>
+          </div>
+          <div class="detailed-view-card-text-container">
+            <h1 class="detailed-view-card-heading">Mysore Palace,Karnataka</h1>
+            <p class="detailed-view-card-description">
+              Mysore Palace, or Amba Vilas Palace, is a magnificent royal
+               residence located in Mysuru, Karnataka. Built in 1912, it is
+               an architectural marvel blending Indo-Saracenic, Hindu, Mughal, 
+               and Gothic styles. Designed by British architect Henry Irwin, the palace 
+               features a grand façade with domes, arches, and turrets, complemented by lavish 
+               interiors adorned with stained glass, intricate carvings, and mosaic floors. It
+                houses artifacts like royal portraits, weapons, and jewelry, offering a glimpse
+                 into the Wadiyar dynasty's opulent past. The illuminated palace, with over 100,000
+                  bulbs, is a breathtaking sight, especially during the vibrant Dasara Festival. 
+                  Surrounded by lush gardens, it includes several ancient temples. Open daily to visitors,
+                   Mysore Palace is a symbol of Karnataka’s rich heritage and royal grandeur.
+            </p>
+          </div>
+        </div>
+        <button class="btn btn-warning" style="margin-left: 25px;margin-bottom: 15px;" onclick="display('sectionPlaces')">
+          back
+        </button>
+      </div>
+    </div>
+    <div id="sectionVaranasi" class="detailed-view-bg-container">
+      <h1 class="detailed-view-heading">Detailed View</h1>
+      <div class="detailed-view-card-container">
+        <div
+          id="varanasiTempleCarouse3"
+          class="carousel slide"
+          data-ride="carousel"
+        >
+          <ol class="carousel-indicators">
+            <li
+              data-target="#varanasiTempleCarousel"
+              data-slide-to="0"
+              class="active"
+            ></li>
+            <li data-target="#varanasiTempleCarousel" data-slide-to="1"></li>
+            <li data-target="#varanasiTempleCarousel" data-slide-to="2"></li>
+          </ol>
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img
+                src="https://d1tgh8fmlzexmh.cloudfront.net/ccbp-static-website/varanasi1-img.png"
+                class="d-block w-100"
+                alt="..."
+              />
+            </div>
+            <div class="carousel-item">
+              <img
+                src="https://d1tgh8fmlzexmh.cloudfront.net/ccbp-static-website/varanasi2-img.png"
+                class="d-block w-100"
+                alt="..."
+              />
+            </div>
+            <div class="carousel-item">
+              <img
+                src="https://d1tgh8fmlzexmh.cloudfront.net/ccbp-static-website/varanasi3-img.png"
+                class="d-block w-100"
+                alt="..."
+              />
+            </div>
+          </div>
+          <a
+            class="carousel-control-prev"
+            href="#varanasiTempleCarousel"
+            role="button"
+            data-slide="prev"
+          >
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+          </a>
+          <a
+            class="carousel-control-next"
+            href="#varanasiTempleCarousel"
+            role="button"
+            data-slide="next"
+          >
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+          </a>
+        </div>
+        <div class="detailed-view-card-text-container">
+          <h1 class="detailed-view-card-heading">Manikarnika Ghat,Varanasi</h1>
+          <p class="detailed-view-card-description">
+            Sri Kashi Vishwanath Temple also known as the Golden Temple, it is
+            dedicated to Lord Shiva, the presiding deity of the city. Varanasi
+            is Said to be the point at which the first jyotirlinga, the fiery
+            pillar of light by which shiva manifested has supremacy over others
+            gods, broke through the Earth’s crust and flared towards the
+            heavens. More than the Gaths and even the Ganga, the Shivalinga
+            installed in the temple remains the devotional focus of Varanasi.
+          </p>
+        </div>
+      </div>
+      <button class="btn btn-warning" style="margin-left: 25px;margin-bottom: 15px;" onclick="display('sectionPlaces')">
+        back
+      </button>
+    </div>
+    <div id="sectionGoa">
+      <div class="detailed-view-bg-container">
+        <h1 class="detailed-view-heading">Detailed View</h1>
+        <div class="detailed-view-card-container">
+          <div id="carouselExampleIndicators4" class="carousel slide" data-ride="carousel">
+            <ol class="carousel-indicators">
+              <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+              <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+              <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+            </ol>
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img
+                  src="https://www.agoda.com/wp-content/uploads/2024/07/Goa-India-1244x700.jpg"
+                  class="d-block w-100"
+                  alt="..."
+                />
+              </div>
+              <div class="carousel-item">
+                <img
+                  src="https://s7ap1.scene7.com/is/image/incredibleindia/vagator-beach-goa-city-1-hero?qlt=82&ts=1726735692450"
+                  class="d-block w-100"
+                  alt="..."
+                />
+              </div>
+              <div class="carousel-item">
+                <img
+                  src="https://images.travelandleisureasia.com/wp-content/uploads/sites/2/2024/04/05162843/Palm-beach-1-1600x900.jpg"
+                  class="d-block w-100"
+                  alt="..."
+                />
+              </div>
+            </div>
+            <a class="carousel-control-prev" href="#carouselExampleIndicators1" role="button" data-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="sr-only">Previous</span>
+            </a>
+            <a class="carousel-control-next" href="#carouselExampleIndicators1" role="button" data-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="sr-only">Next</span>
+            </a>
+          </div>
+          <div class="detailed-view-card-text-container">
+            <h1 class="detailed-view-card-heading">Goa</h1>
+            <p class="detailed-view-card-description">
+              Goa, located on India's western coast, is a small state renowned for its vibrant culture, scenic beauty, and Portuguese heritage. Famous for its golden beaches, Goa attracts millions of tourists annually for its water sports, nightlife, and beach parties. The state is a melting pot of Indian and Western influences, reflected in its cuisine, architecture, and festivals. Goa's capital, Panaji, is known for its charming streets and the Mandovi River. Historic landmarks include the Basilica of Bom Jesus and Fort Aguada. The state's lush hinterlands are dotted with spice plantations and waterfalls, offering serene getaways. Goa also hosts popular events like the Sunburn Festival. Its laid-back lifestyle and welcoming vibe make it a unique blend of tradition and modernity.
+            </p>
+          </div>
+        </div>
+        <button class="btn btn-warning" style="margin-left: 25px;margin-bottom: 15px;" onclick="display('sectionPlaces')">
+          back
+        </button>
+      </div>
+    </div>
+    <div id="sectionMunnar">
+      <div class="detailed-view-bg-container">
+        <h1 class="detailed-view-heading">Detailed View</h1>
+        <div class="detailed-view-card-container">
+          <div id="carouselExampleIndicators4" class="carousel slide" data-ride="carousel">
+            <ol class="carousel-indicators">
+              <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+              <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+              <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+            </ol>
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img
+                  src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/ad/Munnar_hillstation_kerala.jpg/1024px-Munnar_hillstation_kerala.jpg"
+                  class="d-block w-100"
+                  alt="..."
+                />
+              </div>
+              <div class="carousel-item">
+                <img
+                  src="https://luxeglamp.com/wp-content/uploads/2023/02/luxeglamp-Projects-Munnar.jpg"
+                  class="d-block w-100"
+                  alt="..."
+                />
+              </div>
+              <div class="carousel-item">
+                <img
+                  src="https://s7ap1.scene7.com/is/image/incredibleindia/top-station-munnar-kerala-1-attr-hero?qlt=82&ts=1726672844426"
+                  class="d-block w-100"
+                  alt="..."
+                />
+              </div>
+            </div>
+            <a class="carousel-control-prev" href="#carouselExampleIndicators1" role="button" data-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="sr-only">Previous</span>
+            </a>
+            <a class="carousel-control-next" href="#carouselExampleIndicators1" role="button" data-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="sr-only">Next</span>
+            </a>
+          </div>
+          <div class="detailed-view-card-text-container">
+            <h1 class="detailed-view-card-heading">Munnar,Kerala</h1>
+            <p class="detailed-view-card-description">
+              Munnar, a picturesque hill station in Kerala, India, is nestled in the Western Ghats at an altitude of about 1,600 meters. Known for its sprawling tea plantations, Munnar is a haven for nature lovers and trekkers. The rolling hills are carpeted with lush greenery, offering stunning views and serene landscapes. Key attractions include the Eravikulam National Park, home to the endangered Nilgiri Tahr, and the Anamudi Peak, the highest point in South India. The Mattupetty Dam and Kundala Lake are popular spots for boating and picnics. Munnar also features vibrant flower gardens and spice plantations. The cool climate and misty environment make it a perfect retreat. Its rich biodiversity, including rare flora and fauna, adds to its allure. A blend of tranquility and adventure makes Munnar a must-visit destination.
+            </p>
+          </div>
+        </div>
+        <button class="btn btn-warning" style="margin-left: 25px;margin-bottom: 15px;" onclick="display('sectionPlaces')">
+          back
+        </button>
+      </div>
+    </div>
+    <div id="sectionManali">
+      <div class="detailed-view-bg-container">
+        <h1 class="detailed-view-heading">Detailed View</h1>
+        <div class="detailed-view-card-container">
+          <div id="carouselExampleIndicators4" class="carousel slide" data-ride="carousel">
+            <ol class="carousel-indicators">
+              <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+              <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+              <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+            </ol>
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img
+                  src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e2/Manali_Mountains.jpg/1200px-Manali_Mountains.jpg"
+                  class="d-block w-100"
+                  alt="..."
+                />
+              </div>
+              <div class="carousel-item">
+                <img
+                  src="https://s3.india.com/wp-content/uploads/2024/05/Feature-Image_-Manali.jpg"
+                  class="d-block w-100"
+                  alt="..."
+                />
+              </div>
+              <div class="carousel-item">
+                <img
+                  src="https://www.bharatbooking.com/admin/webroot/img/uploads/holiday-package-gallery/1699613375_53638-kullu-manali-tour-package-from-delhi-slider-image.webp"
+                  class="d-block w-100"
+                  alt="..."
+                />
+              </div>
+            </div>
+            <a class="carousel-control-prev" href="#carouselExampleIndicators1" role="button" data-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="sr-only">Previous</span>
+            </a>
+            <a class="carousel-control-next" href="#carouselExampleIndicators1" role="button" data-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="sr-only">Next</span>
+            </a>
+          </div>
+          <div class="detailed-view-card-text-container">
+            <h1 class="detailed-view-card-heading">Manali,Himachal Pradesh</h1>
+            <p class="detailed-view-card-description">
+              Manali, a charming hill station in Himachal Pradesh, India, is nestled in the majestic Himalayas at an altitude of about 2,050 meters. It is renowned for its snow-capped mountains, lush valleys, and pristine rivers. The town serves as a gateway to adventure, offering activities like trekking, paragliding, and skiing. The Rohtang Pass and Solang Valley are major attractions, providing breathtaking views and thrilling experiences. Manali is also famous for its hot springs at Vashisht Village and the Hadimba Temple, a unique wooden structure surrounded by cedar forests. The Beas River adds to the scenic charm, ideal for rafting and picnics. Old Manali offers a bohemian vibe with quaint cafes and craft shops. The vibrant culture, natural beauty, and year-round pleasant weather make Manali a favorite for travelers seeking relaxation and adventure alike.
+            </p>
+          </div>
+        </div>
+        <button class="btn btn-warning" style="margin-left: 25px;margin-bottom: 15px;" onclick="display('sectionPlaces')">
+          back
+        </button>
+      </div>
+    </div>
+    <div id="sectionAmritsar">
+      <div class="detailed-view-bg-container">
+        <h1 class="detailed-view-heading">Detailed View</h1>
+        <div class="detailed-view-card-container">
+          <div id="carouselExampleIndicators4" class="carousel slide" data-ride="carousel">
+            <ol class="carousel-indicators">
+              <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+              <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+              <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+            </ol>
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img
+                  src="https://plus.unsplash.com/premium_photo-1697730324062-c012bc98eb13?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                  class="d-block w-100"
+                  alt="..."
+                />
+              </div>
+              <div class="carousel-item">
+                <img
+                  src="https://plus.unsplash.com/premium_photo-1697730329150-c02859ad5440?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                  class="d-block w-100"
+                  alt="..."
+                />
+              </div>
+              <div class="carousel-item">
+                <img
+                  src="https://plus.unsplash.com/premium_photo-1697730478835-e7764928862c?q=80&w=2942&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                  class="d-block w-100"
+                  alt="..."
+                />
+              </div>
+            </div>
+            <a class="carousel-control-prev" href="#carouselExampleIndicators1" role="button" data-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="sr-only">Previous</span>
+            </a>
+            <a class="carousel-control-next" href="#carouselExampleIndicators1" role="button" data-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="sr-only">Next</span>
+            </a>
+          </div>
+          <div class="detailed-view-card-text-container">
+            <h1 class="detailed-view-card-heading">Amritsar</h1>
+            <p class="detailed-view-card-description">
+              Amritsar, located in the northern Indian state of Punjab, is a historic city renowned for its cultural, religious, and architectural significance. It is home to the Golden Temple, the holiest site for Sikhs, known for its stunning golden facade and serene Amrit Sarovar (holy tank). The city was founded in 1577 by Guru Ram Das, the fourth Sikh Guru. Amritsar played a pivotal role in India's freedom struggle, with the Jallianwala Bagh massacre being a significant event. The Wagah Border ceremony near the India-Pakistan border draws patriotic visitors daily. Known for its vibrant bazaars, Punjabi cuisine, and hospitality, Amritsar blends tradition with modernity. The city is also a hub for textiles and handicrafts. Its rich history and spiritual ambiance make it a top destination in India.
+            </p>
+          </div>
+        </div>
+        <button class="btn btn-warning" style="margin-left: 25px;margin-bottom: 15px;" onclick="display('sectionPlaces')">
+          back
+        </button>
+      </div>
+    </div>
+    <div id="sectionOoty">
+      <div class="detailed-view-bg-container">
+        <h1 class="detailed-view-heading">Detailed View</h1>
+        <div class="detailed-view-card-container">
+          <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+            <ol class="carousel-indicators">
+              <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+              <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+              <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+            </ol>
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img
+                  src="https://www.tamilnadutourism.tn.gov.in/img/pages/medium-desktop/take-a-ride-in-the-toy-train-1653978188_8ac904b5bdb228abad78.webp"
+                  class="d-block w-100"
+                  alt="..."
+                />
+              </div>
+              <div class="carousel-item">
+                <img
+                  src="https://i0.wp.com/www.minikinescapades.com/wp-content/uploads/2016/09/Nilgirs-lakes-mountains.jpg?resize=900%2C596&ssl=1"
+                  class="d-block w-100"
+                  alt="..."
+                />
+              </div>
+              <div class="carousel-item">
+                <img
+                  src="https://www.aanavandi.com/blog/wp-content/uploads/2018/04/ooty-train.jpg"
+                  class="d-block w-100"
+                  alt="..."
+                />
+              </div>
+            </div>
+            <a class="carousel-control-prev" href="#carouselExampleIndicators1" role="button" data-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="sr-only">Previous</span>
+            </a>
+            <a class="carousel-control-next" href="#carouselExampleIndicators1" role="button" data-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="sr-only">Next</span>
+            </a>
+          </div>
+          <div class="detailed-view-card-text-container">
+            <h1 class="detailed-view-card-heading">Ooty,Tamil Nadu</h1>
+            <p class="detailed-view-card-description">
+              Ooty, or Udhagamandalam, is a picturesque hill station in Tamil Nadu, India, nestled in the Nilgiri Hills. Known as the "Queen of Hill Stations," it is famous for its lush greenery, rolling tea plantations, and pleasant weather. Ooty Lake, a serene artificial lake, is a popular spot for boating. The Nilgiri Mountain Railway, a UNESCO World Heritage site, offers scenic train rides through forests and tunnels. Botanical gardens and rose gardens showcase a variety of flora. Doddabetta Peak provides panoramic views of the surrounding hills. The town's colonial-era charm is evident in its architecture and heritage buildings. Adventure activities like trekking and hiking are popular among visitors. Ooty’s homemade chocolates and eucalyptus oil are sought-after souvenirs. Its natural beauty and tranquility make it a favored destination for tourists and honeymooners.
+            </p>
+          </div>
+        </div>
+        <button class="btn btn-warning" style="margin-left: 25px;margin-bottom: 15px;" onclick="display('sectionPlaces')">
+          back
+        </button>
+      </div>
+    </div>
+  <script type="text/javascript" src="https://d1tgh8fmlzexmh.cloudfront.net/ccbp-static-website/js/ccbp-ui-kit.js"></script>
+</body>
+</html>
