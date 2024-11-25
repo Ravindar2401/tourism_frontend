@@ -1,2 +1,1 @@
-
-visit[tourism](https://github.com/Ravindar2401/tourism_frontend.git)
+To visit the site > [tourism.in](https://ravindar2401.github.io/tourism_frontend/)
